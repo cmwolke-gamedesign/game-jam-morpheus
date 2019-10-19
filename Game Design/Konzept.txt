@@ -1,0 +1,118 @@
+﻿SPIELNAME:
+Hyper Song Shifter
+
+
+GRUNDPRINZIP:
+Der Spieler steuert einen jungen Musikgott mit dem Ziel, zu einem der großen Götter aufzusteigen. Hierfür muss er verschiedene Musikrichtigungen meistern, und den "Olymp" erklimmen
+
+Über die Nummerntasten kann er einen von insgesamt drei Tracks auswählen. Je nach gewähltem
+Track ist der Spieler gegenüber Gegnern und anderen Elementen in der Spielwelt neutral,
+benachteiligt oder im Vorteil. Die drei Tracks sind:
+
+"Reign of Chaos" - Metal ( besiegt Techno )
+"Le Chanson de la Chanson Op. 4 Noc. 23 in E-Moll" - Klassik ( besiegt Metal )
+"How much is the red herring" - Techno ( besiegt Klassik )
+
+Der Spieler bewegt seinen Charakter nun durch ein Level, welches er nur meistert, wenn
+er in den richtigen Momenten zwischen den Tracks wechselt. Das
+Spiel ist gewonnen, wenn der Spieler vor Ablauf des Zeitlimits das Ende erreicht.
+
+Es gibt unterschiedliche Spielelemente mit denen der Spieler interagieren kann: Gewisse Blöcke können mit Musik in ihre 
+Eigenfrequenz gebracht werden und so zerstört, anderen kann der spieler für kurze Zeit seine Musik übergeben, 
+um so die Gegner von sich abzulenken. 
+
+Der Spieler muss auf zwei zeitliche Konstanten achten: Einerseits seinen "Musikwert", ein Balken, der sich füllt, solange 
+der Charakter dieselbe Musikrichtung inne hat und wieder auf null fällt, wenn er wechselt, und andererseits 
+einen Energiewert, der quasi das zeitliche Limit darstellt, und mit Energiepacks wieder aufgefüllt werden kann. Der 
+Musikwert ist gleichzeitig die Lebensenergie für den Spieler: Berührungen mit Gegnern verletzen ihn und wenn sich der 
+Spieler außerhalb seines Musikbereiches befindet, sinkt der Wert gegen 0 ( = Tod)
+
+Ein Hauptelement des Spiels ist der Musikbereich um die Musikquelle - in der Regel also dem Charakter. Bewegt sich der Spieler außerhalb des bereiches, verliert er schnell 
+
+
+STEUERUNG:
+
+// CARO EDIT:
+- Maus: Blickrichtung in Mauszeiger
+- LMAUS: Angriff
+- RMAUS: Blöcke benutzen
+- Zahlentasten 123 Musikrichtung auswählen
+- WASD - Laufen
+
+- Limitbreak wenn Musikmeter vollgelaufen ist
+
+
+
+GRAFIKEN:
+
+Felder:
+- Metal-Bodenfeld
+- Klassik-Bodenfeld
+- Techno-Bodenfeld
+- Neutrales Bodenfeld
+- Mauer-Bodenfeld (Nicht passierbar)
+- Start-Bodenfeld
+- Ziel-Bodenfeld
+- Transparentes, leeres Bodenfeld
+
+Objekte:
+- Lautsprecher (Nicht passierbar)
+- Vibrationsblöcke (Mit Eigenfrequenz zerstören)
+
+Items:
+- Batterien / Powerpacks
+
+-Gegner: 
+// Caro: Abhängig von finalem Design (--> Axel, Jeanette)
+- Techno-Hamster
+- Metal-Igel
+- Klassik-Ente (???)
+
+Sonstige Grafiken:
+- Titelbild
+- Himmelgrafik
+- Wolken
+
+
+MUSIK:
+- Titelmusik
+- "Reign of Chaos"
+- "Le Chanson de la Chanson Op. 4 Noc. 23 in E-Moll"
+- "How much is the red herring"
+
+
+SPIELWELT:
+
+- Felder des Typs Metal, Klassik und Techno brechen nach 2-3 Sekunden weg, sofern der Spieler
+auf ihnen dauerhaft steht und währenddessen die falsche Musik hört. Dies wird durch ein Wackeln des Feldes angekündigt
+// Alternativ: Schmerzen AKA. Musikmeter fällt
+
+MECHANIKEN:
+- Startet das Level, läuft ein Timer von XXX (120?) Sekunden herab.
+- Betritt der Spieler ein transparentes, leeres Feld, steht der Timer auf 0 oder hat 0 Lebensenergie, stirbt er
+- Stirbt ein Spieler, startet das Level erneut.
+- Hört man den Track eines Gegners, lässt er einen in Ruhe.
+- Hört man den "feindlichen" Track eines Gegners, flüchtet er.
+- Hört man den verhassten Track eines Gegners, greift er an.
+- Mit jeder Sekunde füllt sich das Limit-Meter weiter. bei XX Sekunden ist es voll aufgefüllt.
+- Ist das Limit-Meter voll, kann der Spieler je nach aktuell gewähltem Track eine Spezialattacke triggern
+	- Metal-Schallwelle, wirft Gegner weg
+	- Technostrahl, betäubt Gegner (machen keinen Schaden, schiebbar, reagieren nicht)
+	- Klassik - Violinenschlüssel-Schlag: Rundumschlag mit Violinenschlüssel vor Charakter
+- Wechselt der Spieler den Track, wird das Limit-Meter auf XX gesetzt.
+- Der Charakter verbraucht konstant Energie, die mit Energiepacks wieder aufgefüllt werden kann
+
+Beispiel: hört man Techno, ist es den Techno-Hamstern ziemlich egal. Metal-Igel werden
+hingegen angreifen, da sie Techno hassen. Klassik-Enten flüchten, da sie der Techno verstört.
+
+
+SCORE-SYSTEM
+Ist das Level abgeschlossen, wird ein Highscore aus folgenden Werten berechnet:
+	- getöteten Gegnern
+	- übrige Zeit
+	- übrige Batterielaufzeit
+	- Anzahl durchgeführterLimitbreaks?
+
+
+SONSTIGE NOTIZEN ZUM SPIEL
+Drei Level!

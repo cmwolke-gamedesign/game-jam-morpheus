@@ -1,0 +1,15 @@
+<project name="git_release" default="release">
+	<property environment="env"/>
+	
+	<target name="release">
+		<zip destfile="build.zip" basedir="build" excludes="**/*.pdb"/> 
+		
+		<exec executable="github-release.exe">
+			<arg line="release -t build-${env.BUILD_ID}" />
+		</exec>
+		
+		<exec executable="github-release.exe">
+			<arg line="upload -t build-${env.BUILD_ID} -n build.zip -f build.zip"  />
+		</exec>
+	</target>
+</project>

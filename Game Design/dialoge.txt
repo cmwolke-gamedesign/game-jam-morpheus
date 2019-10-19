@@ -1,0 +1,18 @@
+Vor dem ersten Level:
+
+- Alter Gott: Die Helden der Vergangenheit sind alle tot. Nun liegt es an dir, in den Musikolymp aufzusteigen. Um das zu erreichen,
+musst du dich einer Herausforderung stellen. Für deine Prüfung werden dir drei verschiedene Musikrichtungen zur Seite gestellt.
+Setze sie weise ein. Der Rat der Musikgötter zählt auf dich.
+
+Englisch: The heroes of the past are dead. Now it is up to you to rise and claim a place in the music olymp. In order to achieve this
+you must face a challenge. You will have three music styles available to guide you during your quest. Use them wisely. The council of 
+the music gods is counting on you!
+
+
+Nach dem Spiel:
+
+- Alter Gott: Du hast die Prüfung erfolgreich bestanden! Wir wussten, dass du es schaffen wirst. Nun bist du ein Teil des Rates
+der Musikgötter und steigst in den Musikolymp auf.
+
+English: You completed your challenge successfully. We knew that you would make it. Now you will be a part of the music gods high council
+and claim your place in the music olymp.
